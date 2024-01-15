@@ -1,38 +1,172 @@
-.App {
+
+.font-link {
+  font-family: 'Nunito', sans-serif;
+}
+
+html, body {
+  background-attachment: fixed;
+  background-image: url("../public/mancoding.png");
+  background-size: cover;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  
+}
+
+#page1 {
+  background-color: #1e2125;
+}
+
+#page2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 10vw;
+  margin-bottom: 15vw;
+  background-color: #1e2125;
+  display: flex;
+}
+
+#page3 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 10vw;
+  margin-bottom: 15vw;
+  background-color: #1e2125;
+}
+
+
+#topholder {
+  display: flex;
+  flex-direction: row;
+}
+
+h1, h2, h3 {
+  font-family: 'Nunito', sans-serif;
+  color: #e7e7e7;
+
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  color: #e7e7e7d6;
+}
+
+header {
+  margin-left: 3.5%;
+
+}
+
+#languageholder {
+  width: 30vw;
+}
+
+#welcome {
+  color: #e7e7e7d6;
+  margin-bottom: 1rem;
+}
+
+#welcome2 {
+  color: #e7e7e7d6;
+  margin-bottom: 1rem;
+}
+
+#introduction, #description {
+  color: #e7e7e7d6;
+  margin-bottom: 1rem;
+}
+
+
+.namecolor {
+  color: #E8D0A7;
+}
+
+#firstfloat {
+  margin-right: 5vw;
+}
+
+#secondfloat {
+  margin-left: 10vw;
+  margin-right: 15vw;
+
+}
+
+#secondfloat p {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 10rem;
+}
+
+#metxt {
+  margin-top: 0;
+}
+
+#vector {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8rem;
+  width: 20%;
+
+}
+
+#page2 header {
+  width: 50vw;
+}
+
+#me {
+  max-width: 400px;
+  border: #e7e7e7 solid 4px;
+  border-radius: 50%;
+  margin-left: 10vw;
+}
+
+#welcome3 {
+  color: #e7e7e7d6;
+  margin-bottom: 1rem;
+}
+
+#projectsholder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+
+.projectimg {
+  margin-left: 3.5%;
+  max-width: 39vw;
+  border: #e7e7e7 solid 4px;
+  border-radius: 1rem;
+}
+
+.projectname {
+  margin-left: 3.5%;
+  max-width: 40vw;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.projectdescription {
+  text-align: center;
+  margin-left: 3.5%;
+  max-width: 40vw;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box {
+  padding: 0 4rem 0 4rem;
+  --mask:
+    radial-gradient(70.46px at 98.00px 50%,#000 99%,#0000 101%) 0 calc(50% - 80px)/51% 160px repeat-y,
+    radial-gradient(70.46px at -58px 50%,#0000 99%,#000 101%) 40px 50%/calc(51% - 40px) 160px repeat-y,
+		radial-gradient(70.46px at calc(100% - 98.00px) 50%,#000 99%,#0000 101%) 100% calc(50% - 80px)/51% 160px repeat-y,
+    radial-gradient(70.46px at calc(100% + 58.00px) 50%,#0000 99%,#000 101%) calc(100% - 40px) 50%/calc(51% - 40px) 160px repeat-y;
+    background-color: #e7e7e74d;
+    height: 100vh;
+    width: 30vw;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
