@@ -1,10 +1,95 @@
-import React from 'react';
-
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
+import React, { useState } from 'react';
 import './App.css';
 import './Animations.css';
 
 function App() {
+  const slides = [
+    {
+      imgSrc: './portfolio.png',
+      projectName: 'My portfolio',
+      projectDescription: 'This project is my portfolio, it is made with React and is the current website that you are currently on.',
+      githubLink: 'https://github.com/WixdomCoding/portfolio',
+    },
+    {
+      imgSrc: './portfolio.png',
+      projectName: 'Prisma tenta',
+      projectDescription: 'Jag utvecklade en interaktiv webbplats där användare kan registrera sig med ett användarnamn, lösenord och välja en roll (antingen som admin eller användare). All användardata lagras i en MySQL-databas. Webbplatsen kräver inloggning, och beroende på användarens roll kommer hen antingen att få möjlighet att skapa och publicera blogginlägg eller endast att läsa dessa inlägg. För att uppnå detta kommer vi att använda HTML, CSS, Node.js, Express, Prisma och MySQL.',
+      githubLink: 'https://github.com/WixdomCoding/Daniel_tenta3',
+    },
+    {
+      imgSrc: './portfolio.png',
+      projectName: 'React & Node.js tenta',
+      projectDescription: 'Tenta 4 description',
+      githubLink: 'https://github.com/WixdomCoding/Daniel_tenta3',
+    },
+    {
+      imgSrc: './portfolio.png',
+      projectName: 'NodeJS CRUD',
+      projectDescription: 'NodeJS CRUD Description',
+      githubLink: 'https://github.com/WixdomCoding/NodeJS-CRUD',
+    },
+    {
+      imgSrc: './portfolio.png',
+      projectName: 'DGD Lyrics Reborn',
+      projectDescription: 'A website hosting lyrics for the band Dance Gavin Dance.',
+      githubLink: 'https://github.com/WixdomCoding/DGD-Lyrics-Reborn',
+    },
+    {
+      imgSrc: './portfolio.png',
+      projectName: 'PHP tenta',
+      projectDescription: 'A php website',
+      githubLink: 'https://github.com/WixdomCoding/DanielP_hemtenta2',
+    },
+    {
+      imgSrc: './portfolio.png',
+      projectName: 'Is it friday?',
+      projectDescription: 'A simple website which tells you if it is friday or not and how long it is until the next friday.',
+      githubLink: 'https://github.com/WixdomCoding/it-is-friday-',
+    },
+    {
+      imgSrc: './portfolio.png',
+      projectName: 'PHP calendar',
+      projectDescription: 'A calendar made with PHP',
+      githubLink: 'https://github.com/WixdomCoding/kaleder-finished',
+    },
+    {
+      imgSrc: './portfolio.png',
+      projectName: 'Javascript tenta',
+      projectDescription: 'JS tenta 1',
+      githubLink: 'https://github.com/WixdomCoding/Daniel_hemtenta1',
+    },
+    {
+      imgSrc: './portfolio.png',
+      projectName: 'Javascript Exercises',
+      projectDescription: 'A bunch of javascript exercises',
+      githubLink: 'https://github.com/WixdomCoding/Javascript',
+    },
+    {
+      imgSrc: './portfolio.png',
+      projectName: 'GitHub Redesign',
+      projectDescription: 'A fun redesign idea made for fun. A project made by me and 2 others. All js written by me, majority css written by me, and a tiny bit of html written by me.',
+      githubLink: 'https://github.com/WixdomCoding/redesign',
+    },
+    {
+      imgSrc: './portfolio.png',
+      projectName: 'Weather API',
+      projectDescription: 'A website for checking the current weather in a specific place',
+      githubLink: 'https://github.com/WixdomCoding/Weather-API', 
+    },
+
+
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const goToNextSlide = () => {
+    setCurrentSlide((prevIndex) => (prevIndex + 1) % slides.length);
+  };
+
+  const goToPrevSlide = () => {
+    setCurrentSlide((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
+  };
+
   return (
     <div>
       <div id='page1'>
@@ -64,22 +149,38 @@ function App() {
         <header>
           <h1 id='welcome3'>Projects</h1>
         </header>
-        <div id='projectsholder'>
-          <div>
-            <img className='projectimg' src='./portfolio.png'></img>
-            <h2 className='projectname'>My portfolio</h2>
-            <p className='projectdescription'>This project is my portfolio, it is made with React and is the current website that you are currently on.</p>
-          </div>
-          <div>
-            <img className='projectimg' src='./portfolio.png'></img>
-            <h2 className='projectname'>Prisma tenta</h2>
-            <p className='projectdescription'></p>
-          </div>
+          
+            <div id='projectsholder'>
+                <div id='floaterslideshow'>
 
+                  <div id='buttonleft'>
+                    <button className='arrow-button' onClick={goToPrevSlide}>{'<'}</button>
+                  </div>
+                  <div>
 
-        </div>
+                    <div>
 
-        
+                      <img className='projectimg' src={slides[currentSlide].imgSrc} alt='Project Image'></img>
+                      <h2 className='projectname'>{slides[currentSlide].projectName}</h2>
+
+                    </div>
+
+                  </div>
+
+                  <div id='buttonright'>
+                  <button className='arrow-button' onClick={goToNextSlide}>{'>'}</button>
+                  </div>
+
+              </div>
+
+            </div>
+            <div id='projdescholder'>
+            <div id='anchorholder'>
+              <a href={slides[currentSlide].githubLink} target='_blank'>GitHub Link</a>
+            </div>
+            <p className='projectdescription'>{slides[currentSlide].projectDescription}</p>
+            </div>
+
       </div>
     </div>
   );
