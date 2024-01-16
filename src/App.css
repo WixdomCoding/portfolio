@@ -159,7 +159,8 @@ header {
 }
 
 .projectimg {
-  max-width: 40vw;
+  width: 40vw;
+  height: 20vw;
   border: #e7e7e7 solid 4px;
   border-radius: 1rem;
 }
