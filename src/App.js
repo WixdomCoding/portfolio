@@ -18,19 +18,19 @@ import './Animations.css';
     {
       imgSrc: './nodecrud.png',
       projectName: 'NodeJS CRUD',
-      projectDescription: 'A simple CRUD application made with NodeJS. ',
+      projectDescription: 'A simple CRUD application made with NodeJS. All the users as well as all of their information is showcased on the website.',
       githubLink: 'https://github.com/WixdomCoding/NodeJS-CRUD',
     },
     {
       imgSrc: './dgdlyrics.png',
       projectName: 'DGD Lyrics Reborn',
-      projectDescription: 'A website hosting lyrics for the band Dance Gavin Dance. ',
+      projectDescription: 'A website hosting lyrics for the band Dance Gavin Dance. This was one of the first websites where I was able to use my own design. The website is made with HTML, CSS, and Javascript. The thought was to continue to work on this website, adding sections for albums as well as other things, but the code is old, it would be better to work on it from scratch.',
       githubLink: 'https://github.com/WixdomCoding/DGD-Lyrics-Reborn',
     },
     {
       imgSrc: './phptenta.png',
       projectName: 'PHP tenta',
-      projectDescription: 'A php website',
+      projectDescription: 'A php website where you would add products through a form (An image, the name and the price) and then it would be shown on the website. You could also remove products from the website. The website is connected to a MySQL database.',
       githubLink: 'https://github.com/WixdomCoding/DanielP_hemtenta2',
     },
     {
@@ -42,7 +42,7 @@ import './Animations.css';
     {
       imgSrc: './calendar.png',
       projectName: 'PHP calendar',
-      projectDescription: 'A calendar made with PHP',
+      projectDescription: 'A calendar made with PHP where you can see the current month as an image, as well as all of the months and their "namnsdag", which is a thing in Sweden where you celebrate your name on a specific day.',
       githubLink: 'https://github.com/WixdomCoding/kaleder-finished',
     },
     {
@@ -60,7 +60,7 @@ import './Animations.css';
     {
       imgSrc: './githubredesign.png',
       projectName: 'GitHub Redesign',
-      projectDescription: 'A fun redesign idea made for fun. A project made by me and 2 others. All js written by me, majority css written by me, and a tiny bit of html written by me.',
+      projectDescription: 'A redesign idea made for fun. A project made by me and 2 others. All js written by me, majority css written by me, and a tiny bit of html written by me.',
       githubLink: 'https://github.com/WixdomCoding/redesign',
     },
     {
