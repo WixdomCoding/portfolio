@@ -173,7 +173,7 @@ const App = () => {
             <div id='anchorholder'>
              <h2 className='projectname'>{slides[currentSlide].projectName}</h2>
               <a href={slides[currentSlide].githubLink} target='_blank' rel='noopener noreferrer'>
-                GitHub / Website Link
+              → GitHub / Website Link ←
               </a>
             </div>
             <p className='projectdescription'>{slides[currentSlide].projectDescription}</p>
