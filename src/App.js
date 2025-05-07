@@ -4,6 +4,12 @@ import './Animations.css';
 
   const slides = [
     {
+      imgSrc: './aphiwitport.png',
+      projectName: 'Aphiwit Portfolio',
+      projectDescription: 'I strongly suggest taking a look at this one by clicking the "Github / Website Link". It will lead you directly to the website so that you can check it out yourself! This was the largest solo project I have done to date. I was hired by Aphiwit Lekphet to make a portfolio website for them and their prjects. Do not be afraid to click around on the website! It was make with HTML, CSS and JavaScript.',
+      githubLink: 'https://therealaphiwit.github.io/Aphiwit-Portfolio-Website/index.html', 
+    },
+    {
       imgSrc: './portfolio.png',
       projectName: 'My portfolio',
       projectDescription: 'This project is my portfolio, it is made with React and is the current website that you are on. I had a limited time to make it, so the project has not reached its full potential yet.',
@@ -69,6 +75,7 @@ import './Animations.css';
       projectDescription: 'A website for checking the current weather in a specific place. This was the first time that I used an API so the focus was mostly to understand the usage rather than to create a well designed website, as one might be able to tell.',
       githubLink: 'https://github.com/WixdomCoding/Weather-API', 
     },
+    
 
 
   ];
@@ -166,7 +173,7 @@ const App = () => {
             <div id='anchorholder'>
              <h2 className='projectname'>{slides[currentSlide].projectName}</h2>
               <a href={slides[currentSlide].githubLink} target='_blank' rel='noopener noreferrer'>
-                GitHub Link
+                GitHub / Website Link
               </a>
             </div>
             <p className='projectdescription'>{slides[currentSlide].projectDescription}</p>
